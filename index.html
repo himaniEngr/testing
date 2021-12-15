@@ -30,14 +30,29 @@
         display: grid;
         grid-template-columns: auto 1fr auto;
         align-items: center;
+        column-gap: 20px;
+
         /* padding: 10px; */
+      }
+
+      .open {
+        border-top: 5px solid #087f5b;
+      }
+      .icon {
+        height: 24px;
+        width: 24px;
+        /* padding: 10px; */
+        margin-right: 10px;
       }
       .number,
       .text {
         color: #5e6b67;
         font-size: 24px;
         font-weight: 500;
-        padding: 10px;
+        padding-top: 18px;
+      }
+      .number {
+        color: #adb5bd;
       }
       .open .number,
       .open .text {
@@ -68,26 +83,31 @@
         display: block;
       }
       .item {
-        box-shadow: 0 0 32px #5e6b67;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        column-gap: 24px;
+        row-gap: 32px;
+        padding: 24px;
       }
     </style>
   </head>
   <body>
     <div class="accordion">
       <div class="item">
-        <div class="number">01</div>
-        <div class="text">How long do I have to return my chair?</div>
+        <p class="number">01</p>
+        <p class="text">Where are these chairs assembled?</p>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
           <path
-            fill-rule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clip-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
           />
         </svg>
 
@@ -109,18 +129,20 @@
         </div>
       </div>
       <div class="item open">
-        <div class="number">02</div>
-        <div class="text">How long do I have to return my chair?</div>
+        <p class="number">02</p>
+        <p class="text">How long do I have to return my chair?</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
           <path
-            fill-rule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clip-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
           />
         </svg>
         <div class="hidden-box">
@@ -141,8 +163,8 @@
         </div>
       </div>
       <div class="item">
-        <div class="number">03</div>
-        <div class="text">How long do I have to return my chair?</div>
+        <p class="number">03</p>
+        <p class="text">Do you ship to countries outside the EU?</p>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
