@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion element</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+      }
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        /* padding: 10px; */
+      }
+      .number,
+      .text {
+        color: #5e6b67;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 10px;
+      }
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
+      .open .icon {
+        height: 24px;
+        width: 24px;
+        stroke: #087f5b;
+      }
+      .hidden-box p {
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+      .hidden-box ul {
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+        gap: 10px;
+        color: #adb5bd;
+        padding-bottom: 20px;
+      }
+      .hidden-box {
+        grid-column: 2;
+        display: none;
+      }
+      .open .hidden-box {
+        display: block;
+      }
+      .item {
+        box-shadow: 0 0 32px #5e6b67;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <div class="number">01</div>
+        <div class="text">How long do I have to return my chair?</div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            placeat inventore asperiores accusamus dolorum dolore voluptates,
+            hic eveniet, tenetur labore commodi delectus! Temporibus minima
+            saepe odio architecto nulla vero consequatur.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi at odio culpa veritatis reiciendis ex deserunt voluptate
+            </li>
+            <li>obis omnis hic doloribus itaque aspernatur, consectetur,</li>
+            <li>neque dolorem molestiae magnam explicabo in.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item open">
+        <div class="number">02</div>
+        <div class="text">How long do I have to return my chair?</div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            placeat inventore asperiores accusamus dolorum dolore voluptates,
+            hic eveniet, tenetur labore commodi delectus! Temporibus minima
+            saepe odio architecto nulla vero consequatur.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi at odio culpa veritatis reiciendis ex deserunt voluptate
+            </li>
+            <li>obis omnis hic doloribus itaque aspernatur, consectetur,</li>
+            <li>neque dolorem molestiae magnam explicabo in.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="number">03</div>
+        <div class="text">How long do I have to return my chair?</div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            placeat inventore asperiores accusamus dolorum dolore voluptates,
+            hic eveniet, tenetur labore commodi delectus! Temporibus minima
+            saepe odio architecto nulla vero consequatur.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi at odio culpa veritatis reiciendis ex deserunt voluptate
+            </li>
+            <li>obis omnis hic doloribus itaque aspernatur, consectetur,</li>
+            <li>neque dolorem molestiae magnam explicabo in.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
